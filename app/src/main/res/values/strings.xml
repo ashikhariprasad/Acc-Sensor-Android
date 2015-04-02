@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AccSensor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="new_register">New to Acc-Sensor? Register here</string>
+    <string name="login">Login</string>
+    <string name="empty_phone">Please enter phone number</string>
+    <string name="empty_password">Please enter password</string>
+    <string name="login_success">LOGIN SUCCESS!!!</string>
+    <string name="login_failure">Failed to login.</string>
+    <string name="register_phone">Phone</string>
+    <string name="register_password">Password</string>
+    <string name="registerAway">Register</string>
+    <string name="alreadyAUser">Already has account! Login here</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="startDemo">Go Into Safety Mode</string>
+    <string name="updateProfile">UpdateProfile</string>
+    <string name="acceleration">Device Acceleration (m/s2)</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detector">DetectorActivity</string>
+</resources>
