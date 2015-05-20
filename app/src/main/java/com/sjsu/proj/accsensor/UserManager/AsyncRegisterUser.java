@@ -32,7 +32,7 @@ public class AsyncRegisterUser extends AsyncTask<String,Void,Void>{
     private String serverPath;
     private JSONObject jsonObject;
     private String[] keys = {"firstname","lastname","phone","password"};
-    private String result;
+    private JSONObject result;
 
     public AsyncResponse responseHandler = null;
 
@@ -56,7 +56,7 @@ public class AsyncRegisterUser extends AsyncTask<String,Void,Void>{
             try {
                 for (int i = 0; i < keys.length; i++) {
                     if(i==2)
-                        jsonObject.put(keys[i],Integer.parseInt(params[i]));
+                        jsonObject.put(keys[i],Long.parseLong(params[i]));
                     else
                         jsonObject.put(keys[i], params[i]);
                 }
@@ -72,7 +72,7 @@ public class AsyncRegisterUser extends AsyncTask<String,Void,Void>{
             ServerManager server = new ServerManager(serverUrl,serverPath,"",jsonObject);
             try{
                 result = server.doPost();
-                Log.d("RESULT", result);
+                Log.d("RESULT", result.toString());
             }
             catch(Exception e){
                 Log.e("Error trying to Login",e.toString());

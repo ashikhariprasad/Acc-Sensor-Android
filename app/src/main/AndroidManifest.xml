@@ -3,10 +3,13 @@
     package="com.sjsu.proj.accsensor" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
@@ -24,13 +27,29 @@
             android:label="@string/title_activity_register" >
         </activity>
         <activity
-            android:name="com.sjsu.proj.accsensor.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
         <activity
-            android:name="com.sjsu.proj.accsensor.DetectorActivity"
+            android:name=".DetectorActivity"
             android:label="@string/title_activity_detector" >
         </activity>
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile" >
+        </activity>
+
+        <service
+            android:name=".SoundAlarmService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".GPSLocation"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
     </application>
 
 </manifest>

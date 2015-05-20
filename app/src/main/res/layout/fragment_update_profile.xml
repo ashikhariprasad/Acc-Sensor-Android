@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.sjsu.proj.accsensor.UpdateProfileFragment">
+
+    <RelativeLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:background="#ffffff">
+        <!--Header Start-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <!--Header End-->
+
+        <!--Footer Start-->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="150dp">
+            <ImageView
+                android:src="@drawable/footer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <!--Footer End-->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/body"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/name"/>
+            <EditText android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/age"/>
+            <EditText android:id="@+id/age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/gender"/>
+            <EditText android:id="@+id/gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="@string/address"/>
+            <EditText android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+
+            <EditText android:id="@+id/econtact1Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact1Name"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact1Phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact1Phone"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact1Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact1Email"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+
+            <EditText android:id="@+id/econtact2Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact2Name"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact2Phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact2Phone"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact2Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact2Email"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+
+            <EditText android:id="@+id/econtact3Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact3Name"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact3Phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact3Phone"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/econtact3Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/econtact3Email"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/body2"
+            android:padding="10dip"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/body">
+            <Button android:id="@+id/btnUpdateConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/updateConfirm"/>
+            <Button android:id="@+id/btnUpdateCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/updateCancel"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

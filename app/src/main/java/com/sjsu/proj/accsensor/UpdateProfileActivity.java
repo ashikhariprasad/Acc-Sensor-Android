@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class HomeActivity extends FragmentActivity {
+public class UpdateProfileActivity extends FragmentActivity {
     String userId;
 
     @Override
@@ -19,7 +19,7 @@ public class HomeActivity extends FragmentActivity {
         Bundle extras = getIntent().getExtras();
         if(extras != null){
             userId = extras.getString("EXTRA_USER_ID");
-            Log.d("HomeActivity LoginID : ",userId);
+            Log.d("UPDATE ACTIVITY UID : ", userId);
         }
         setContentView(R.layout.activity_home);
 
@@ -27,7 +27,7 @@ public class HomeActivity extends FragmentActivity {
         Fragment fragment = fm.findFragmentById(R.id.fragmentContainer);
 
         if(fragment == null){
-            fragment = new HomeFragment();
+            fragment = new UpdateProfileFragment();
             fm.beginTransaction()
                     .add(R.id.fragmentContainer, fragment)
                     .commit();
@@ -35,5 +35,4 @@ public class HomeActivity extends FragmentActivity {
         }
 
     }
-
 }

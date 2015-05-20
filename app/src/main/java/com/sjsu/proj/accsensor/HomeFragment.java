@@ -10,13 +10,28 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 /**
- * Created by ssrinidhi on 4/1/2015.
+ * Created by Ashik on 4/1/2015.
  */
 public class HomeFragment extends Fragment {
+    String userId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Bundle extras = getActivity().getIntent().getExtras();
+        if(extras != null){
+            userId = extras.getString("EXTRA_USER_ID");
+        }
         super.onCreate(savedInstanceState);
+    }
+    @Override
+    public void onResume() {
+
+        super.onResume();
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
     }
 
     @Override
@@ -30,7 +45,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(),DetectorActivity.class);
+                i.putExtra("EXTRA_USER_ID",userId);
                 startActivity(i);
+            }
+        });
+
+        Button updateButton = (Button)v.findViewById(R.id.btnUpdateProfile);
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent updateIntent = new Intent(getActivity(),UpdateProfileActivity.class);
+                updateIntent.putExtra("EXTRA_USER_ID",userId);
+                startActivity(updateIntent);
             }
         });
 

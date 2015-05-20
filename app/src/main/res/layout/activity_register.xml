@@ -41,25 +41,6 @@
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="@string/firstname"/>
-            <EditText android:id="@+id/firstname"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:singleLine="true"/>
-            <TextView android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#372c24"
-                android:text="@string/lastname"/>
-            <EditText android:id="@+id/lastname"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:singleLine="true"/>
-
-            <TextView android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#372c24"
                 android:text="@string/register_phone"/>
             <EditText android:id="@+id/reg_phone"
                 android:layout_width="fill_parent"
@@ -76,6 +57,18 @@
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:password="true"/>
+
+            <EditText android:id="@+id/firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+            <EditText android:id="@+id/lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"/>
+
             <!-- Register Button -->
             <Button android:id="@+id/btnRegister"
                 android:layout_width="fill_parent"
